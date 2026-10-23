@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Insight Dashboard</title>
+
+    <!-- Connect external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">N</div>
+            <div>
+                <h2>Nosense Studio</h2>
+                <p>hello@nosense.studio</p>
+            </div>
+        </div>
+
+        <input type="search" class="search"
+               placeholder="⌕ Search..."
+               aria-label="Search dashboard">
+
+        <nav class="menu">
+            <a href="#" class="active">▦ Dashboard</a>
+            <a href="#">♙ Employee Directory</a>
+            <a href="#">◷ Attendance</a>
+            <a href="#">▤ Employee Performance</a>
+            <a href="#">▣ Leave Management</a>
+            <a href="#">▤ Payroll</a>
+            <a href="#">♧ Recruitment</a>
+            <a href="#">♙ Onboarding</a>
+            <a href="#">▱ Development</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">ⓘ Help Center</a>
+            <a href="#">⚙ Settings</a>
+            <a href="#" class="sign-out">⇥ Sign Out</a>
+        </div>
+
+    </aside>
+
+    <!-- Main dashboard -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <p class="breadcrumb">Dashboard / Overview</p>
+
+            <div class="top-actions">
+                <button class="button">+ Invite People</button>
+                <button class="button primary">Generate Plan</button>
+            </div>
+        </header>
+
+        <section class="page-heading">
+            <h1>HR Insight Dashboard</h1>
+            <p>Smart HR insights that drive better decisions</p>
+        </section>
+
+        <div class="top-actions page-buttons">
+            <button class="button">Export Data</button>
+            <button class="button primary">+ New Entry</button>
+        </div>
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <article class="card stat-card">
+                <p class="stat-title">♙ Total Employee</p>
+                <div class="stat-number-row">
+                    <h2>272</h2>
+                    <span class="growth">↗ 6% last month</span>
+                </div>
+            </article>
+
+            <article class="card stat-card">
+                <p class="stat-title">♙ New Employee</p>
+                <div class="stat-number-row">
+                    <h2>72</h2>
+                    <span class="growth">↗ 4% last month</span>
+                </div>
+            </article>
+
+            <article class="card stat-card">
+                <p class="stat-title">♙ Resign Employee</p>
+                <div class="stat-number-row">
+                    <h2>16</h2>
+                    <span class="growth">↗ 2% last month</span>
+                </div>
+            </article>
+
+            <article class="card stat-card">
+                <p class="stat-title">▣ Job Applicants</p>
+                <div class="stat-number-row">
+                    <h2>329</h2>
+                    <span class="growth">↗ 8% last month</span>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Charts -->
+        <section class="charts-grid">
+
+            <article class="card">
+                <div class="card-heading">
+                    <h3>Team Performance</h3>
+                    <span class="more">•••</span>
+                </div>
+
+                <div class="chart-options">
+                    <div class="chart-legend">
+                        <span><i class="dot purple"></i>Project Team</span>
+                        <span><i class="dot orange"></i>Product Team</span>
+                    </div>
+
+                    <div class="chart-tabs">
+                        <button>Monthly</button>
+                        <button class="selected">Yearly</button>
+                    </div>
+                </div>
+
+                <svg class="performance-chart" viewBox="0 0 600 230"
+                     role="img" aria-label="Team performance chart">
+
+                    <g stroke="#eeeeF3" stroke-width="1">
+                        <line x1="45" y1="25" x2="590" y2="25"/>
+                        <line x1="45" y1="65" x2="590" y2="65"/>
+                        <line x1="45" y1="105" x2="590" y2="105"/>
+                        <line x1="45" y1="145" x2="590" y2="145"/>
+                        <line x1="45" y1="185" x2="590" y2="185"/>
+                    </g>
+
+                    <g fill="#858795" font-size="10">
+                        <text x="5" y="29">50K</text>
+                        <text x="5" y="69">40K</text>
+                        <text x="5" y="109">30K</text>
+                        <text x="5" y="149">20K</text>
+                        <text x="5" y="189">10K</text>
+                    </g>
+
+                    <path d="M45 130 C65 120 75 150 95 130
+                             S130 105 150 120 S185 140 205 115
+                             S230 135 250 110 S280 100 300 115
+                             S335 85 355 100 S385 70 405 90
+                             S440 95 460 85 S490 105 510 70
+                             S550 75 590 35"
+                          fill="none" stroke="#7950e8"
+                          stroke-width="2.5"/>
+
+                    <path d="M45 175 C65 180 80 155 100 170
+                             S140 185 160 165 S190 125 210 150
+                             S240 185 260 165 S290 180 310 145
+                             S340 190 360 165 S395 180 415 135
+                             S450 170 470 150 S510 180 530 145
+                             S560 165 590 125"
+                          fill="none" stroke="#e9a05c"
+                          stroke-width="2.5"/>
+
+                    <g fill="#858795" font-size="10" text-anchor="middle">
+                        <text x="45" y="215">Jan</text>
+                        <text x="95" y="215">Feb</text>
+                        <text x="145" y="215">Mar</text>
+                        <text x="195" y="215">Apr</text>
+                        <text x="245" y="215">May</text>
+                        <text x="295" y="215">Jun</text>
+                        <text x="345" y="215">Jul</text>
+                        <text x="395" y="215">Aug</text>
+                        <text x="445" y="215">Sep</text>
+                        <text x="495" y="215">Oct</text>
+                        <text x="545" y="215">Nov</text>
+                        <text x="590" y="215">Dec</text>
+                    </g>
+                </svg>
+            </article>
+
+            <!-- Attendance report -->
+            <article class="card">
+                <div class="card-heading">
+                    <h3>Attendance Report</h3>
+                    <span class="more">•••</span>
+                </div>
+
+                <div class="attendance-grid">
+                    <span></span>
+                    <span class="day">Mon</span>
+                    <span class="day">Tue</span>
+                    <span class="day">Wed</span>
+                    <span class="day">Thu</span>
+                    <span class="day">Fri</span>
+
+                    <span class="time">11:00</span>
+                    <div class="attendance-cell"></div>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell"></div>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell"></div>
+
+                    <span class="time">10:30</span>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell level-1"></div>
+
+                    <span class="time">10:00</span>
+                    <div class="attendance-cell level-1"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-2"></div>
+
+                    <span class="time">09:30</span>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-3"></div>
+                    <div class="attendance-cell level-2"></div>
+                    <div class="attendance-cell level-3"></div>
+
+                    <span class="time">09:00</span>
+                    <div class="attendance-cell level-3"></div>
+                    <div class="attendance-cell level-3"></div>
+                    <div class="attendance-cell level-4"></div>
+                    <div class="attendance-cell level-3"></div>
+                    <div class="attendance-cell level-3"></div>
+
+                    <span class="time">08:30</span>
+                    <div class="attendance-cell level-4"></div>
+                    <div class="attendance-cell level-4"></div>
+                    <div class="attendance-cell level-4"></div>
+                    <div class="attendance-cell level-4"></div>
+                    <div class="attendance-cell level-4"></div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Employees and jobs -->
+        <section class="bottom-grid">
+
+            <article class="card">
+                <div class="card-heading">
+                    <h3>Employees</h3>
+                    <span class="more">•••</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Employee ID</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Department</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#FR01890</td>
+                                <td>Cooper Herwitz</td>
+                                <td>cooper@gmail.com</td>
+                                <td>Jr. Developer</td>
+                                <td>IT</td>
+                                <td><span class="status">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>#FR01728</td>
+                                <td>Kierra Gouse</td>
+                                <td>kierra@gmail.com</td>
+                                <td>UI Designer</td>
+                                <td>Creative</td>
+                                <td><span class="status">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>#FR01653</td>
+                                <td>Cheyenne Franci</td>
+                                <td>cheyenne@gmail.com</td>
+                                <td>Developer</td>
+                                <td>HR</td>
+                                <td><span class="status">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>#FR01832</td>
+                                <td>Charlie Sains</td>
+                                <td>charlie@gmail.com</td>
+                                <td>Social Media</td>
+                                <td>Marketing</td>
+                                <td><span class="status">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>#FR01728</td>
+                                <td>Lindsey Mango</td>
+                                <td>lindsey@gmail.com</td>
+                                <td>Product Designer</td>
+                                <td>Creative</td>
+                                <td><span class="status">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Jobs overview -->
+            <article class="card">
+                <div class="card-heading">
+                    <h3>Jobs Overview</h3>
+                    <span class="more">•••</span>
+                </div>
+
+                <div class="jobs-chart">
+                    <div class="jobs-total">
+                        <h2>72</h2>
+                        <p>Total Jobs</p>
+                    </div>
+                </div>
+
+                <div class="job-row">
+                    <span><i class="dot purple"></i><b>46</b></span>
+                    <span class="job-label">Active Jobs</span>
+                </div>
+
+                <div class="job-row">
+                    <span><i class="dot orange"></i><b>18</b></span>
+                    <span class="job-label">In Review Jobs</span>
+                </div>
+
+                <div class="job-row">
+                    <span><i class="dot green"></i><b>8</b></span>
+                    <span class="job-label">Finished Jobs</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
